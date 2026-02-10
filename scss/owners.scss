@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+.owners {
+  background-color: $bg-pink;
+  padding: 60px 20px;
+}
+
+.owner-holder {
+  max-width: $site-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.owner-image {
+  flex-shrink: 0;
+
+  img {
+    width: 360px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $text-brown;
+  }
+}
+
+.owner-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+
+  h2 {
+    color: $text-brown;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    color: $text-brown;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $text-brown;
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 900px) {
+  .owner-holder {
+    flex-direction: column;
+    text-align: center;
+  }
+}

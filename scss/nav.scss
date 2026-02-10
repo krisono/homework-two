@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+nav {
+  height: 50px;
+  background-color: #d4c5d6;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: #7a5239;
+    font-size: 14px;
+  }
+}

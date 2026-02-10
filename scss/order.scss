@@ -1,0 +1,75 @@
+@use "variables" as *;
+
+.order {
+  background-color: $bg-yellow;
+  padding: $section-padding;
+
+  .section-title {
+    text-align: center;
+    color: $text-brown;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: normal;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: $text-brown;
+        font-size: 16px;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid $bg-pink;
+        border-radius: 4px;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        background-color: #fff;
+        color: $text-brown;
+
+        &:focus {
+          outline: none;
+          border-color: $bg-pink;
+        }
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+    }
+
+    .submit-button {
+      align-self: center;
+      padding: 12px 50px;
+      background-color: $bg-pink;
+      border: 1px solid $text-brown;
+      border-radius: 25px;
+      color: $text-brown;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $bg-pink;
+      }
+    }
+  }
+}

@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+nav {
+  height: 50px;
+  background-color: #d4c5d6;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: #7a5239;
+  font-size: 14px;
+}
+
+.hero {
+  height: 500px;
+  background-image: url("../images/cakeshopTwo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background-color: #e8cfe0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text h1 {
+  color: #7a5239;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.owners {
+  background-color: #e8cfe0;
+  padding: 60px 20px;
+}
+
+.owner-holder {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.owner-image {
+  flex-shrink: 0;
+}
+.owner-image img {
+  width: 360px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #7a5239;
+}
+
+.owner-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+.owner-content h2 {
+  color: #7a5239;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.owner-content h3 {
+  color: #7a5239;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.owner-content p {
+  color: #7a5239;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .owner-holder {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.about {
+  background-color: #e9e8be;
+  padding: 80px 20px;
+}
+.about .section-title {
+  text-align: center;
+  color: #7a5239;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+.about .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.about .about-cards {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about .about-card {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about .about-card h3 {
+  color: #7a5239;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.about .about-card h4 {
+  color: #7a5239;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+.about .about-card .about-image {
+  width: 440px;
+  height: 296px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #ffffff;
+}
+.about .about-card .about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .about-card p {
+  color: #7a5239;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+  max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .about .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cakes {
+  background-color: #e9e8be;
+  padding: 80px 20px;
+}
+.cakes .section-title {
+  text-align: center;
+  color: #7a5239;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+.cakes .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cakes .cakes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.cakes .cake-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cakes .cake-item .cake-image {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.cakes .cake-item .cake-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cakes .cake-item p {
+  color: #7a5239;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+  max-width: 280px;
+}
+
+@media (max-width: 900px) {
+  .cakes .cakes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.order {
+  background-color: #e9e8be;
+  padding: 80px 20px;
+}
+.order .section-title {
+  text-align: center;
+  color: #7a5239;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+.order .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.order .order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.order .order-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.order .order-form .form-group label {
+  color: #7a5239;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.order .order-form .form-group input,
+.order .order-form .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e8cfe0;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #7a5239;
+}
+.order .order-form .form-group input:focus,
+.order .order-form .form-group textarea:focus {
+  outline: none;
+  border-color: #e8cfe0;
+}
+.order .order-form .form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.order .order-form .submit-button {
+  align-self: center;
+  padding: 12px 50px;
+  background-color: #e8cfe0;
+  border: 1px solid #7a5239;
+  border-radius: 25px;
+  color: #7a5239;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.order .order-form .submit-button:hover {
+  background-color: #e8cfe0;
+}
+
+.before-after-strip {
+  background-color: #e8cfe0;
+  padding: 40px 20px;
+}
+.before-after-strip .container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.before-after-strip .tip-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+}
+.before-after-strip .tip-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.before-after-strip .tip-content {
+  flex: 1;
+}
+.before-after-strip .tip-content h3 {
+  color: #7a5239;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.before-after-strip .tip-content p {
+  color: #7a5239;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .before-after-strip .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .before-after-strip .tip-icon {
+    margin-bottom: 10px;
+  }
+}
+.reviews {
+  background-color: #e9e8be;
+  padding: 80px 20px;
+}
+.reviews .section-title {
+  text-align: center;
+  color: #7a5239;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+.reviews .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.reviews .reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.reviews .review-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.reviews .review-item .review-image {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #7a5239;
+}
+.reviews .review-item .review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviews .review-item .review-content {
+  flex: 1;
+}
+.reviews .review-item .review-content h3 {
+  color: #7a5239;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.reviews .review-item .review-content p {
+  color: #7a5239;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .reviews .review-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .reviews .review-item .review-image {
+    margin-bottom: 15px;
+  }
+}
+.contact {
+  background-color: #e8cfe0;
+  padding: 80px 20px;
+}
+.contact .section-title {
+  text-align: center;
+  color: #7a5239;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+.contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact .contact-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+}
+.contact .contact-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contact .contact-info {
+  flex: 1;
+  text-align: center;
+}
+.contact .contact-info p {
+  color: #7a5239;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+  .contact .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact .contact-icon {
+    margin-bottom: 10px;
+  }
+}
